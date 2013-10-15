@@ -13,5 +13,16 @@ salt, chef) it would be possible to deploy a entire meal.
 -----------------
 Project Resources
 -----------------
--- TODO define hardware requirments
--- TODO write the X10 driver module
+-- After a little looking I found my x10 hardware is way out of date.
+   It looks like there is now Inste0n: So I've reworked the driver to
+   use Inste0n hardware.
+
+   Here are a couple of links to some cheap hardware that can be picked
+   up at your local Home Depot. (you know it a real hack if you get to go to Home Depot)
+
+-- http://www.homedepot.com/p/Insteon-PowerLine-Modem-2413S/204380605?N=arcd#.UlyE-Xgkt38
+-- http://www.homedepot.com/p/Smarthome-ApplianceLinc-INSTEON-Plug-in-Appliance-On-Off-3-Pin-Module-2456s3/100530075?N=arcd#.UlyFiXgkt38
+
+-- I use plmpower from this ubuntu package: https://launchpad.net/ubuntu/raring/+package/powerman
+   to issue the actual commands to the devices.
+
