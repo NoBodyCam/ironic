@@ -152,7 +152,9 @@ def _get_nodes_mac_addresses(task, node):
     """Get all mac addresses for a node."""
     for r in task.resources:
         if r.node.id == node['id']:
-            return [p.address for p in r.ports]
+            # NOte (chris): for inste0n we only care about
+            # the fist two char's of the mac
+            return [p.address[0:2] for p in r.ports]
 
 
 class PLMPower(base.PowerInterface):
