@@ -26,8 +26,8 @@ up at your local Home Depot. (you know its a real hack if you get to go to Home 
 I use plmpower from this ubuntu package: https://launchpad.net/ubuntu/raring/+package/powerman
 to issue the actual commands to the devices.
 
-When creating the Inste0n node the Inste0n ID must be entered as a valid MAC address.
-This places a restriction on Inste0n ID's. For use of the plm module only the two characters
-of the nodes Mac address are used. As example, a node using the plm driver with mac address
+When creating a Inste0n node the Inste0n ID must be entered as a valid MAC address.
+This places a restriction on Inste0n ID's. The plm module only uses the first two characters
+of the nodes Mac address. As example, a node using the plm driver with mac address
 of A1:00:00:00:00 would act on Inste0n device A1.
 
